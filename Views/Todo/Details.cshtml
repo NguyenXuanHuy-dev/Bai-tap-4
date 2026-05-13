@@ -1,0 +1,37 @@
+@model baitap.Models.TodoItem
+
+@{
+    ViewData["Title"] = "Chi tiết công việc";
+}
+
+<div class="container text-center mt-4 border border-dark">
+    <div class="header-banner">
+        <h1 class="exercise-title m-0">BÀI TẬP VẬN DỤNG 2</h1>
+    </div>
+    <div class="p-3">
+        <p>Xây dựng ứng dụng TodoList với các chức năng: Xem danh sách, chi tiết, thêm, sửa, xoá</p>
+
+        <h2 class="mt-4">Chi tiết công việc</h2>
+    <hr />
+
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-start">
+            <dl class="row">
+                <dt class="col-sm-4">Mã công việc</dt>
+                <dd class="col-sm-8">@Model.Id</dd>
+                
+                <dt class="col-sm-4">Tên công việc</dt>
+                <dd class="col-sm-8">@Model.Name</dd>
+                
+                <dt class="col-sm-4">Trạng thái hoàn thành</dt>
+                <dd class="col-sm-8">@(Model.IsCompleted ? "Hoàn thành" : "Chưa hoàn thành")</dd>
+            </dl>
+            <div class="mt-3">
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Sửa</a>
+                <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer-banner"></div>
+</div>
