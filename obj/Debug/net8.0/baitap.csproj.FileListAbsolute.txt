@@ -28,3 +28,4 @@ C:\Buổi 4\baitap\obj\Debug\net8.0\refint\baitap.dll
 C:\Buổi 4\baitap\obj\Debug\net8.0\baitap.pdb
 C:\Buổi 4\baitap\obj\Debug\net8.0\baitap.genruntimeconfig.cache
 C:\Buổi 4\baitap\obj\Debug\net8.0\ref\baitap.dll
+C:\Buổi 4\baitap\obj\Debug\net8.0\baitap.sourcelink.json
